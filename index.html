@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <meta charset="UTF-8"></meta>
+    <title>rot13</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,800|Roboto+Mono&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="app">
+      <h1>{{ name }}</h1>
+      <original-message v-model="text"></original-message>
+      <output-message v-model="rot13_message"></output-message>
+    </div>
+    <footer>
+      <a href="https://github.com/ston1x/rot13" style="text-decoration: none; color: grey;">github
+      </a>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
